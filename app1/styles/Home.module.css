@@ -252,9 +252,9 @@
 
 /* Button style. Inspired by Mantine */
 .button {
-  background: blue;
+  background: #77bc1f;
   padding: 10px 20px;
-  border: 1px solid blue;
+  border: 1px solid #77bc1f;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 200px;

@@ -35,7 +35,7 @@ export default function Home({ data }: { data: [] }) {
             >
               INCREMENT
             </button>
-            <h2>Payee Names</h2>
+            <h2>Names</h2>
             <br />
             <ul>
               {data.map(item => {
@@ -55,7 +55,7 @@ export default function Home({ data }: { data: [] }) {
 
 export async function getServerSideProps() {
   const url =
-    "https://dev-api.ac1.conservice.com/conservice-portal/payment-control-center/secured/api/v1/ach-transfers/in-progress?status=1";
+    "https://dev-api.ac1.conservice.com/conservice-portal/payment-control-center/secured/api/v1/ach-transfers/in-progress?status=READY_TO_PAY";
   const response = await fetch(url, {
     headers: {
       Authorization: `Bearer ${process.env.TOKEN}`,
