@@ -250,7 +250,6 @@
   }
 }
 
-/* Button style. Inspired by Mantine */
 .button {
   background: #77bc1f;
   padding: 10px 20px;
@@ -259,6 +258,10 @@
   margin-bottom: 20px;
   width: 200px;
   cursor: pointer;
+}
+
+.payee div:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 
 /* Tablet and Smaller Desktop */
